@@ -15,10 +15,10 @@ $(document).ready(function () {
     var lineChartExample = new Chart(LINECHARTEXMPLE, {
         type: 'line',
         data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["1 Months", "2 Months", "3 Months", "4 Months", "5 Months", "6 Months", "7 Months", "8 Months", "9 Months", "10 Months", "11 Months", "1 Year"],
             datasets: [
                 {
-                    label: "Data Set One",
+                    label: "Goal One",
                     fill: true,
                     lineTension: 0.3,
                     backgroundColor: "rgba(51, 179, 90, 0.38)",
@@ -41,7 +41,7 @@ $(document).ready(function () {
                     spanGaps: false
                 },
                 {
-                    label: "Data Set Two",
+                    label: "Goal Two",
                     fill: true,
                     lineTension: 0.3,
                     backgroundColor: "rgba(75,192,192,0.4)",
@@ -60,7 +60,30 @@ $(document).ready(function () {
                     pointHoverBorderWidth: 2,
                     pointRadius: 1,
                     pointHitRadius: 10,
-                    data: [65, 59, 30, 81, 56, 55, 40],
+                    data: [65, 59, 30, 81, 56, 55, 40, 85, 80, 84, 75],
+                    spanGaps: false
+                },
+                {
+                    label: "Goal Three",
+                    fill: true,
+                    lineTension: 0.3,
+                    backgroundColor: "rgba(75,192,192,0.4)",
+                    borderColor: "rgba(75,192,192,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    borderWidth: 1,
+                    pointBorderColor: "rgba(75,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [70, 80, 55, 75, 60, 85, 30, 70, 65, 10, 30, 50],
                     spanGaps: false
                 }
             ]
@@ -71,9 +94,9 @@ $(document).ready(function () {
         type: 'doughnut',
         data: {
             labels: [
-                "First",
-                "Second",
-                "Third"
+                "Need",
+                "Want",
+                "Debt"
             ],
             datasets: [
                 {
