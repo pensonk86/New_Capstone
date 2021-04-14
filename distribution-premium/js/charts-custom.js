@@ -116,6 +116,8 @@ $(document).ready(function () {
             }
     });
 
+    
+
     var pieChartExample = {
         responsive: true
     };

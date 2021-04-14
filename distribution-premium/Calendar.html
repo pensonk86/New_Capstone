@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/fontastic.css">
     <!-- Google fonts - Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <!-- Full Calendar-->
+    <link rel="stylesheet" href="vendor/fullcalendar/fullcalendar.min.css">
     <!-- jQuery Circle-->
     <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
     <!-- Custom Scrollbar-->
@@ -46,14 +48,14 @@
         <div class="main-menu">
           <h5 class="sidenav-heading">Main</h5>
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
-            <li><a href="index.html"> <i class="icon-home"></i>Home                             </a></li>
+            <li><a href="index.html"> <i class="icon-home"></i>Home
+                <li><a href="Guide.html"> <i class="icon icon-padnote"></i>Guide
+                <li><a href="pages-profile.html">Profile</a></li>  
+                                           </a></li>
             
-            <li><a href="pages-profile.html">Profile</a></li>
-            <li><a href="Guide.html"> <i class="icon icon-padnote"></i>Guide
-              <li><a href="Calendar.html"> <i class="icon-bars"></i>Calendar
+              </ul>
+            </li>
             
-        </div>
-        
     </nav>
     <div class="page">
       <!-- navbar-->
@@ -72,19 +74,46 @@
           </div>
         </nav>
       </header>
-      <div class="text-center">
-        <h1 style="font-family:New Times Roman;font-size: 60px;">Welcome To Budget Pro</h1>
-        <img src="https://i.ibb.co/VDfxjJx/background-7.jpg" alt="background-7" width="1300" height="600">
-        
+      <!-- Breadcrumb-->
+      <div class="breadcrumb-holder">
+        <div class="container-fluid">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Calendar       </li>
+          </ul>
+        </div>
+      </div>
+      <section>
+        <div class="container-fluid">
+          <!-- Page Header-->
+          <header> 
+            <h1 class="h3 display">            </h1>
+          </header>
+          <div class="card">
+            <div class="card-header">
+              <h4>Calendar</h4>
+            </div>
+            <div class="card-body">
+              <p></p>
+              <p></p>
+              <div id="calendar">                                                                      </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Your company &copy; 2017-2020</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Version 1.4.7</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    
-      
-            
-            
-            
-
-      
-      
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -93,13 +122,11 @@
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
     <script src="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/charts-home.js"></script>
     <!-- Full Calendar-->
     <script src="vendor/moment/min/moment.min.js">   </script>
     <script src="vendor/fullcalendar/fullcalendar.min.js">   </script>
     <script src="vendor/fullcalendar/gcal.min.js">   </script>
     <script src="js/components-calendar.js"></script>
-    
     <!-- Main File-->
     <script src="js/front.js"></script>
   </body>
